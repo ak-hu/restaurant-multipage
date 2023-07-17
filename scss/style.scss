@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Tenor+Sans&family=Tillana&display=swap');
+
+//============================================Variables============================================================
+
+$main_color: #00AC4E;
+$text_primary: #333333;
+$text_secondary: #828282;
+$text_submenu: #4F4F4F;
+$black_text: #000;
+$gray-bg: #F1F1FB;
+//=================================================================================================================
+
+//============================================Main styles==========================================================
+body{
+	font-family: 'Alice', sans-serif;
+	font-size: 18px;
+}
+
+h2{
+	color: $text_primary;
+	font-family: 'Tenor Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.9rem;
+	line-height: 2rem;
+}
+
+a{
+	color: $text_primary;
+	text-transform: capitalize;
+}
+
+button{
+	background-color: $main_color;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 11px 31px;
+	border-radius: 4.5px;
+}
+
+.container{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+//=================================================================================================================
+
+//============================================Header styles========================================================
+header{
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+
+.header{
+	justify-content: space-between;
+
+	padding: 2rem 0;
+
+	a+a{
+		margin-left: 1rem;
+	}
+
+	.phone{
+		img{
+			width: 1rem;
+		}
+	}
+
+	img+img{
+		margin-left: 1.9rem;
+	}
+
+}
+//=================================================================================================================
+
+//============================================Subscribe section styles=============================================
+.subscribe{
+	margin: 60px 0 3rem 0;
+
+	.content{
+		align-items: flex-start;
+		background-color: $gray-bg;
+		border-radius: 18.0727px;
+
+	}
+	.text{
+		margin: 2.9rem 0 0 2.9rem;
+		width: 60%;
+
+		p{
+			margin: 1rem 0 2rem 0;
+			color: $text_secondary;
+			font-size: 1.2rem;
+			font-weight: 400;
+		}
+	}
+	img{
+		width: 40%;
+	}
+}
+//=================================================================================================================
+
+//============================================Menu section styles==================================================
+.menu{
+	.flex{
+		justify-content: space-between;
+
+		a{
+			text-transform: uppercase;
+			font-family: 'Tillana', cursive;
+			font-size: 24px;
+			color: $text_submenu;
+
+		}
+
+		i{
+			font-size: 24px;
+			color: $main_color;
+		}
+	}
+
+	h2{
+		margin-bottom: 2rem;
+	}
+
+	.products{
+		margin-top: 3rem;
+
+		.flex{
+			align-items: stretch;
+
+			&~.flex{
+				margin: 3rem 0;
+			}
+		}
+	}
+
+
+	.product{
+		width: 25%;
+
+		&+.product{
+			margin-left: 58px;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		h4{
+			margin: 10px 0;
+		}
+
+		p{
+			display: block;
+			height: 57px;
+			font-family: 'Tenor Sans', sans-serif;
+			line-height: 19px;
+			font-size: .8rem;
+		}
+
+		.stars{
+			margin: 1rem 0 11px 0;
+		}
+
+		i{
+			color: $main_color;
+			font-size: 11px;
+
+
+			&:last-child{
+				color: #ebebeb;
+			}
+		}
+
+		button{
+			margin-top: 20px;
+			font-size: 1rem;
+		}
+	}
+
+	.pages{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		font-size: 20px;
+
+		a{
+			margin-right: 25px;
+		}
+	}
+}
+//=================================================================================================================
+
+//============================================Video section styles=================================================
+.video{
+	margin: 60px 0;
+
+	video{
+		width: 100%;
+	}
+}
+//=================================================================================================================
+
+//============================================Delivery section styles==============================================
+
+.delivery{
+	margin-bottom: 60px;
+	background-color: #f8f8f8;
+	border-radius: 18.0727px;
+
+	.text{
+		padding: 2.9rem;
+		width: 60%;
+
+		h3{
+			font-family: "Tenor Sans", sans-serif;
+			font-size: 1.9rem;
+			margin-bottom: 1.7rem;
+		}
+	}
+
+	img{
+		width: 40%;
+	}
+}
+//=================================================================================================================
+
+//============================================Footer styles========================================================
+footer{
+	background-color: $main_color;
+	color: #fff;
+	padding: 40px 0;
+
+	.flex{
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.content{
+		width: 50%;
+	}
+
+	.login{
+		width: 50%;
+		text-align: right;
+	}
+	
+	a{
+		color: #fff;
+		text-transform: none;
+	}
+
+	h6{
+
+	}
+	.social_medias{
+		margin: 2rem 0;
+
+		span{
+			margin-left: 3rem;
+
+			.link-btn+.link-btn{
+				margin-left: 1rem;
+			}
+		}
+	}
+
+	.rights{
+		a{
+			font-family: 'Tillana', cursive;
+			font-size: 14px;
+		
+			&+a{
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+//=================================================================================================================

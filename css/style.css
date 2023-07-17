@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Tenor+Sans&family=Tillana&display=swap");
+body {
+  font-family: 'Alice', sans-serif;
+  font-size: 18px; }
+
+h2 {
+  color: #333333;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2rem; }
+
+a {
+  color: #333333;
+  text-transform: capitalize; }
+
+button {
+  background-color: #00AC4E;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 11px 31px;
+  border-radius: 4.5px; }
+
+.container {
+  max-width: 70%;
+  margin: 0 auto; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+header {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12); }
+
+.header {
+  justify-content: space-between;
+  padding: 2rem 0; }
+  .header a + a {
+    margin-left: 1rem; }
+  .header .phone img {
+    width: 1rem; }
+  .header img + img {
+    margin-left: 1.9rem; }
+
+.subscribe {
+  margin: 60px 0 3rem 0; }
+  .subscribe .content {
+    align-items: flex-start;
+    background-color: #F1F1FB;
+    border-radius: 18.0727px; }
+  .subscribe .text {
+    margin: 2.9rem 0 0 2.9rem;
+    width: 60%; }
+    .subscribe .text p {
+      margin: 1rem 0 2rem 0;
+      color: #828282;
+      font-size: 1.2rem;
+      font-weight: 400; }
+  .subscribe img {
+    width: 40%; }
+
+.menu .flex {
+  justify-content: space-between; }
+  .menu .flex a {
+    text-transform: uppercase;
+    font-family: 'Tillana', cursive;
+    font-size: 24px;
+    color: #4F4F4F; }
+  .menu .flex i {
+    font-size: 24px;
+    color: #00AC4E; }
+.menu h2 {
+  margin-bottom: 2rem; }
+.menu .products {
+  margin-top: 3rem; }
+  .menu .products .flex {
+    align-items: stretch; }
+    .menu .products .flex ~ .flex {
+      margin: 3rem 0; }
+.menu .product {
+  width: 25%; }
+  .menu .product + .product {
+    margin-left: 58px; }
+  .menu .product img {
+    width: 100%; }
+  .menu .product h4 {
+    margin: 10px 0; }
+  .menu .product p {
+    display: block;
+    height: 57px;
+    font-family: 'Tenor Sans', sans-serif;
+    line-height: 19px;
+    font-size: .8rem; }
+  .menu .product .stars {
+    margin: 1rem 0 11px 0; }
+  .menu .product i {
+    color: #00AC4E;
+    font-size: 11px; }
+    .menu .product i:last-child {
+      color: #ebebeb; }
+  .menu .product button {
+    margin-top: 20px;
+    font-size: 1rem; }
+.menu .pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; }
+  .menu .pages a {
+    margin-right: 25px; }
+
+.video {
+  margin: 60px 0; }
+  .video video {
+    width: 100%; }
+
+.delivery {
+  margin-bottom: 60px;
+  background-color: #f8f8f8;
+  border-radius: 18.0727px; }
+  .delivery .text {
+    padding: 2.9rem;
+    width: 60%; }
+    .delivery .text h3 {
+      font-family: "Tenor Sans", sans-serif;
+      font-size: 1.9rem;
+      margin-bottom: 1.7rem; }
+  .delivery img {
+    width: 40%; }
+
+footer {
+  background-color: #00AC4E;
+  color: #fff;
+  padding: 40px 0; }
+  footer .flex {
+    justify-content: space-between;
+    align-items: flex-start; }
+  footer .content {
+    width: 50%; }
+  footer .login {
+    width: 50%;
+    text-align: right; }
+  footer a {
+    color: #fff;
+    text-transform: none; }
+  footer .social_medias {
+    margin: 2rem 0; }
+    footer .social_medias span {
+      margin-left: 3rem; }
+      footer .social_medias span .link-btn + .link-btn {
+        margin-left: 1rem; }
+  footer .rights a {
+    font-family: 'Tillana', cursive;
+    font-size: 14px; }
+    footer .rights a + a {
+      margin-left: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
