@@ -60,7 +60,7 @@ header{
 
 	padding: 2rem 0;
 
-	a+a{
+	a + a{
 		margin-left: 1rem;
 	}
 
@@ -70,7 +70,7 @@ header{
 		}
 	}
 
-	img+img{
+	img + img{
 		margin-left: 1.9rem;
 	}
 
@@ -256,9 +256,6 @@ footer{
 		text-transform: none;
 	}
 
-	h6{
-
-	}
 	.social_medias{
 		margin: 2rem 0;
 
