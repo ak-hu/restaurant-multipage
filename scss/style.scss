@@ -9,13 +9,20 @@ $text_submenu: #4F4F4F;
 $black_text: #000;
 $gray-bg: #F1F1FB;
 $white: #fff;
+$delivery: #f8f8f8;
 
 
 $xs: 1rem;
 $s: 1.2rem;
 $m: 1.5rem;
 $l: 2rem;
-$xl: 2.9rem;
+$xl: 3rem;
+$xxl: 3.7rem;
+
+@mixin flex {
+	display: flex;
+	align-items: center;
+}
 
 
 //=================================================================================================================
@@ -30,7 +37,7 @@ h2 {
 	color: $text_primary;
 	font-family: 'Tenor Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: $l;
 	line-height: $l;
 }
 
@@ -53,9 +60,8 @@ button {
 }
 
 .flex {
-	display: flex;
+	@include flex;
 	flex-direction: row;
-	align-items: center;
 }
 
 a {
@@ -66,12 +72,11 @@ a {
 
 //============================================Header styles========================================================
 header {
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px $xs rgba(0, 0, 0, 0.12);
 }
 
 .header {
 	justify-content: space-between;
-
 	padding: $l 0;
 
 	a + a {
@@ -85,7 +90,7 @@ header {
 	}
 
 	img + img {
-		margin-left: 1.9rem;
+		margin-left: $l;
 	}
 
 }
@@ -93,12 +98,12 @@ header {
 
 //============================================Subscribe section styles=============================================
 .subscribe {
-	margin: 3.7rem 0 3rem 0;
+	margin: $xxl 0 $xl 0;
 
 	.content {
 		align-items: flex-start;
 		background-color: $gray-bg;
-		border-radius: 18.0727px;
+		border-radius: $s;
 
 	}
 	.text {
@@ -123,15 +128,16 @@ header {
 	.flex {
 		justify-content: space-between;
 
+		a, i {
+			font-size: $m;
+		}
+
 		a {
 			text-transform: uppercase;
-			font-size: $m;
 			color: $text_submenu;
-
 		}
 
 		i {
-			font-size: $m;
 			color: $main_color;
 		}
 	}
@@ -141,13 +147,13 @@ header {
 	}
 
 	.products {
-		margin-top: 3rem;
+		margin-top: $xl;
 
 		.flex {
 			align-items: stretch;
 
 			& ~ .flex{
-				margin: 3rem 0;
+				margin: $xl 0;
 			}
 		}
 	}
@@ -157,7 +163,7 @@ header {
 		width: 25%;
 
 		& + .product {
-			margin-left: 58px;
+			margin-left: $xxl;
 		}
 
 		img {
@@ -170,9 +176,9 @@ header {
 
 		p {
 			display: block;
-			height: 57px;
+			height: $xxl;
 			font-family: 'Tenor Sans', sans-serif;
-			line-height: 19px;
+			line-height: $s;
 			font-size: .8rem;
 		}
 
@@ -191,19 +197,18 @@ header {
 		}
 
 		button {
-			margin-top: 20px;
+			margin-top: $s;
 			font-size: $xs;
 		}
 	}
 
 	.pages {
-		display: flex;
-		align-items: center;
+		@include flex;
 		justify-content: center;
-		font-size: 20px;
+		font-size: $s;
 
 		a {
-			margin-right: 25px;
+			margin-right: $m;
 		}
 	}
 }
@@ -211,7 +216,7 @@ header {
 
 //============================================Video section styles=================================================
 .video {
-	margin: 60px 0;
+	margin: $xxl 0;
 
 	video {
 		width: 100%;
@@ -222,9 +227,9 @@ header {
 //============================================Delivery section styles==============================================
 
 .delivery {
-	margin-bottom: 60px;
-	background-color: #f8f8f8;
-	border-radius: 18.0727px;
+	margin-bottom: $xxl;
+	background-color: $delivery;
+	border-radius: $s;
 
 	.text {
 		padding: $xl;
@@ -232,7 +237,7 @@ header {
 
 		h3 {
 			font-family: "Tenor Sans", sans-serif;
-			font-size: 1.9rem;
+			font-size: $l;
 			margin-bottom: 1.7rem;
 		}
 	}
@@ -247,19 +252,18 @@ header {
 footer {
 	background-color: $main_color;
 	color: $white;
-	padding: 40px 0;
+	padding: 2.5rem 0;
 
 	.flex {
 		justify-content: space-between;
 		align-items: flex-start;
 	}
 
-	.content {
+	.content, .login {
 		width: 50%;
 	}
 
 	.login {
-		width: 50%;
 		text-align: right;
 	}
 	
@@ -272,7 +276,7 @@ footer {
 		margin: $l 0;
 
 		span {
-			margin-left: 3rem;
+			margin-left: $xl;
 
 			.link-btn + .link-btn {
 				margin-left: $xs;
