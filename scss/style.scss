@@ -8,69 +8,83 @@ $text_secondary: #828282;
 $text_submenu: #4F4F4F;
 $black_text: #000;
 $gray-bg: #F1F1FB;
+$white: #fff;
+
+
+$xs: 1rem;
+$s: 1.2rem;
+$m: 1.5rem;
+$l: 2rem;
+$xl: 2.9rem;
+
+
 //=================================================================================================================
 
 //============================================Main styles==========================================================
-body{
+body {
 	font-family: 'Alice', sans-serif;
-	font-size: 18px;
+	font-size: $s;
 }
 
-h2{
+h2 {
 	color: $text_primary;
 	font-family: 'Tenor Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.9rem;
-	line-height: 2rem;
+	line-height: $l;
 }
 
-a{
+a {
 	color: $text_primary;
 	text-transform: capitalize;
 }
 
-button{
+button {
 	background-color: $main_color;
-	color: #fff;
-	font-size: 1.5rem;
-	padding: 11px 31px;
+	color: $white;
+	font-size: $m;
+	padding: 0.7rem $l;
 	border-radius: 4.5px;
 }
 
-.container{
+.container {
 	max-width: 70%;
 	margin: 0 auto;
 }
 
-.flex{
+.flex {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
+a {
+	font-family: 'Tillana', cursive;
+}
+
 //=================================================================================================================
 
 //============================================Header styles========================================================
-header{
+header {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
 }
 
-.header{
+.header {
 	justify-content: space-between;
 
-	padding: 2rem 0;
+	padding: $l 0;
 
-	a + a{
-		margin-left: 1rem;
+	a + a {
+		margin-left: $xs;
 	}
 
-	.phone{
-		img{
-			width: 1rem;
+	.phone {
+		img {
+			width: $xs;
 		}
 	}
 
-	img + img{
+	img + img {
 		margin-left: 1.9rem;
 	}
 
@@ -78,84 +92,83 @@ header{
 //=================================================================================================================
 
 //============================================Subscribe section styles=============================================
-.subscribe{
-	margin: 60px 0 3rem 0;
+.subscribe {
+	margin: 3.7rem 0 3rem 0;
 
-	.content{
+	.content {
 		align-items: flex-start;
 		background-color: $gray-bg;
 		border-radius: 18.0727px;
 
 	}
-	.text{
-		margin: 2.9rem 0 0 2.9rem;
+	.text {
+		margin: $xl 0 0 $xl;
 		width: 60%;
 
-		p{
-			margin: 1rem 0 2rem 0;
+		p {
+			margin: $xs 0 $l 0;
 			color: $text_secondary;
-			font-size: 1.2rem;
+			font-size: $s;
 			font-weight: 400;
 		}
 	}
-	img{
+	img {
 		width: 40%;
 	}
 }
 //=================================================================================================================
 
 //============================================Menu section styles==================================================
-.menu{
-	.flex{
+.menu {
+	.flex {
 		justify-content: space-between;
 
-		a{
+		a {
 			text-transform: uppercase;
-			font-family: 'Tillana', cursive;
-			font-size: 24px;
+			font-size: $m;
 			color: $text_submenu;
 
 		}
 
-		i{
-			font-size: 24px;
+		i {
+			font-size: $m;
 			color: $main_color;
 		}
 	}
 
-	h2{
-		margin-bottom: 2rem;
+	h2 {
+		margin-bottom: $l;
 	}
 
-	.products{
+	.products {
 		margin-top: 3rem;
 
-		.flex{
+		.flex {
 			align-items: stretch;
 
-			&~.flex{
+			& ~ .flex{
 				margin: 3rem 0;
 			}
 		}
 	}
 
 
-	.product{
+	.product {
 		width: 25%;
 
-		&+.product{
+		& + .product {
 			margin-left: 58px;
 		}
 
-		img{
+		img {
 			width: 100%;
 		}
 
-		h4{
+		h4 {
 			margin: 10px 0;
 		}
 
-		p{
+		p {
 			display: block;
 			height: 57px;
 			font-family: 'Tenor Sans', sans-serif;
@@ -163,34 +176,33 @@ header{
 			font-size: .8rem;
 		}
 
-		.stars{
-			margin: 1rem 0 11px 0;
+		.stars {
+			margin: $xs 0 11px 0;
 		}
 
-		i{
+		i {
 			color: $main_color;
 			font-size: 11px;
 
 
-			&:last-child{
+			&:last-child {
 				color: #ebebeb;
 			}
 		}
 
-		button{
+		button {
 			margin-top: 20px;
-			font-size: 1rem;
+			font-size: $xs;
 		}
 	}
 
-	.pages{
+	.pages {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 		font-size: 20px;
 
-		a{
+		a {
 			margin-right: 25px;
 		}
 	}
@@ -198,10 +210,10 @@ header{
 //=================================================================================================================
 
 //============================================Video section styles=================================================
-.video{
+.video {
 	margin: 60px 0;
 
-	video{
+	video {
 		width: 100%;
 	}
 }
@@ -209,72 +221,71 @@ header{
 
 //============================================Delivery section styles==============================================
 
-.delivery{
+.delivery {
 	margin-bottom: 60px;
 	background-color: #f8f8f8;
 	border-radius: 18.0727px;
 
-	.text{
-		padding: 2.9rem;
+	.text {
+		padding: $xl;
 		width: 60%;
 
-		h3{
+		h3 {
 			font-family: "Tenor Sans", sans-serif;
 			font-size: 1.9rem;
 			margin-bottom: 1.7rem;
 		}
 	}
 
-	img{
+	img {
 		width: 40%;
 	}
 }
 //=================================================================================================================
 
 //============================================Footer styles========================================================
-footer{
+footer {
 	background-color: $main_color;
-	color: #fff;
+	color: $white;
 	padding: 40px 0;
 
-	.flex{
+	.flex {
 		justify-content: space-between;
 		align-items: flex-start;
 	}
 
-	.content{
+	.content {
 		width: 50%;
 	}
 
-	.login{
+	.login {
 		width: 50%;
 		text-align: right;
 	}
 	
-	a{
-		color: #fff;
+	a {
+		color: $white;
 		text-transform: none;
 	}
 
-	.social_medias{
-		margin: 2rem 0;
+	.social_medias {
+		margin: $l 0;
 
 		span {
 			margin-left: 3rem;
 
-			.link-btn + .link-btn{
-				margin-left: 1rem;
+			.link-btn + .link-btn {
+				margin-left: $xs;
 			}
 		}
 	}
 
-	.rights{
-		a{
-			font-family: 'Tillana', cursive;
+	.rights {
+		a {
 			font-size: 14px;
 		
-			&+a{
-				margin-left: 1rem;
+			& + a {
+				margin-left: $xs;
 			}
 		}
 	}
