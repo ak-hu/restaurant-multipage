@@ -11,7 +11,7 @@ $gray-bg: #F1F1FB;
 $white: #fff;
 $delivery: #f8f8f8;
 
-
+$xxs: 0.7rem;
 $xs: 1rem;
 $s: 1.2rem;
 $m: 1.5rem;
@@ -50,8 +50,8 @@ button {
 	background-color: $main_color;
 	color: $white;
 	font-size: $m;
-	padding: 0.7rem $l;
-	border-radius: 4.5px;
+	padding: $xs * 0.7 $l;
+	border-radius: $xs * 0.2;
 }
 
 .container {
@@ -171,7 +171,7 @@ header {
 		}
 
 		h4 {
-			margin: 10px 0;
+			margin: $xxs 0;
 		}
 
 		p {
@@ -179,16 +179,16 @@ header {
 			height: $xxl;
 			font-family: 'Tenor Sans', sans-serif;
 			line-height: $s;
-			font-size: .8rem;
+			font-size: $xxs;
 		}
 
 		.stars {
-			margin: $xs 0 11px 0;
+			margin: $xs 0 $xxs 0;
 		}
 
 		i {
 			color: $main_color;
-			font-size: 11px;
+			font-size: $xxs;
 
 
 			&:last-child {
@@ -238,7 +238,7 @@ header {
 		h3 {
 			font-family: "Tenor Sans", sans-serif;
 			font-size: $l;
-			margin-bottom: 1.7rem;
+			margin-bottom: $xs * 1.7;
 		}
 	}
 
@@ -252,7 +252,7 @@ header {
 footer {
 	background-color: $main_color;
 	color: $white;
-	padding: 2.5rem 0;
+	padding: $xs * 2.5 0;
 
 	.flex {
 		justify-content: space-between;
@@ -286,7 +286,7 @@ footer {
 
 	.rights {
 		a {
-			font-size: 14px;
+			font-size: $xs * 0.8;
 		
 			& + a {
 				margin-left: $xs;
