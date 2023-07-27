@@ -44,6 +44,7 @@ h2 {
 a {
 	color: $text_primary;
 	text-transform: capitalize;
+	font-family: 'Tillana', cursive;
 }
 
 button {
@@ -62,10 +63,6 @@ button {
 .flex {
 	@include flex;
 	flex-direction: row;
-}
-
-a {
-	font-family: 'Tillana', cursive;
 }
 
 //=================================================================================================================
