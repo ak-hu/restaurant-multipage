@@ -47,7 +47,7 @@ h2 {
 	font-family: 'Tillana', cursive;
 }
 
-button {
+.button {
 	background-color: $main_color;
 	color: $white;
 	font-size: $m;
@@ -193,7 +193,7 @@ header {
 			}
 		}
 
-		button {
+		.button {
 			margin-top: $s;
 			font-size: $xs;
 		}
